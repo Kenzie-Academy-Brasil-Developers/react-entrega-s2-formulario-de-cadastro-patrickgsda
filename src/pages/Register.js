@@ -28,8 +28,7 @@ function Forms() {
       .matches(
         regexPassword,
         "Necessário ter letras, números e ao menos um símbolo!"
-      )
-      .required("Required entry"),
+      ),
     confirmPassword: yup
       .string()
       .oneOf([yup.ref("password"), null], "As senhas não são iguais"),
